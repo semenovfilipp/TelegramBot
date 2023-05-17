@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/common-rabbitmq/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/node/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="node" />
+        <module name="common-jpa" />
+        <module name="rest-service" />
+        <module name="dispatcher" />
+        <module name="common-rabbitmq" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BabushkinPogreb" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="TelegramBot" options="-parameters" />
+      <module name="common-jpa" options="-parameters" />
+      <module name="common-rabbitmq" options="-parameters" />
+      <module name="dispatcher" options="-parameters" />
+      <module name="node" options="-parameters" />
+      <module name="rest-service" options="-parameters" />
+    </option>
+  </component>
+</project>
